@@ -3,10 +3,62 @@
   <head>
     <title>MySite</title>
     <%= csrf_meta_tags %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
+  <header>
+  <div class="container">
+      <div class="row row-centered row-top">
+      <h1 class="hello">Andrew Flattery</h1>     
+      <nav>
+        <span class="col-xs-6  col-centered">
+          <a class="button" href="https://github.com/aflattminor/">
+            <i class="fa fa-2x fa-github"></i>
+            GitHub
+          </a>
+        </span>
+
+        <span class="col-xs-6 col-centered">
+          <a class="button" href="https://www.linkedin.com/in/andrew-flattery/">
+            <i class="fa fa-2x fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </span>
+
+      </nav>
+    </div>
+
+    <div class="row row-centered links">
+        <span class="col-xs-4">
+          <a class="link" href="#portfolio">
+            Portfolio
+          </a>
+        </span>
+
+        <span class="col-xs-4">
+          <a class="link" href="#about">
+            About
+          </a>
+        </span>
+
+        <span class="col-xs-4">
+          <a class="link" href="#contact">
+            Contact
+          </a>
+        </span>
+    </div>
+  </div>
+</header>
+
+<section id="portfolio" class="content container">
+  <h3>Add your content here.</h3>
+  <h3>Add your content here.</h3>
+<section id="about" class="content container">
+  <h1>About</h1>
+</section>
+</section>
 
   <body>
     <%= yield %>
